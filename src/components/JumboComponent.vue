@@ -1,0 +1,102 @@
+<template>
+    <div class="d-flex justify-content-between bg-container container-fluid">
+        <div class="space">
+            <h3>New Challenges, New Skills</h3>
+            <h1>Build your own life coaching business</h1>
+            <p>
+                Whole-Life Business Coaching for committed entrepreneurs
+            </p>
+            <div class="d-flex text-white button">
+                <span>Get started today</span>
+            </div>
+        </div>
+        <div class="img-backgorund"><img src="/img/home-business-hero-avatar.png" alt="Non Trovato">
+        </div>
+        <div class="menu-comparsa">
+            <i class="py-2 fa-solid fa-cart-shopping"></i>
+            <i class="py-2 fa-solid fa-life-ring"></i>
+            <i class="py-2 fa-solid fa-book"></i>
+            <i class="py-2 fa-solid fa-cart-shopping"></i>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    components: {
+        name: 'JumboComponent',
+    },
+}
+</script>
+
+<style lang="scss" scoped>
+@use '../assets/partials/mixins' as *;
+@use '../assets/partials/variables' as *;
+
+.menu-comparsa {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 150px;
+    background-color: $col1;
+    box-shadow: 10px solid black;
+    width: 39px;
+    align-items: center;
+    margin-right: -10px;
+    margin-top: 100px;
+    border-radius: 5px;
+}
+
+.bg-container {
+    background-color: $col11;
+}
+
+.space {
+    padding-top: 150px;
+    padding-left: 50px;
+}
+
+.img-backgorund {
+    background-image: url(./img/home-business-hero-global-image.png);
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0px;
+
+    img {
+        margin-top: 50px;
+        width: 500px;
+    }
+}
+
+h3 {
+    color: $col4;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: $col1-2;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+p {
+    color: $col5;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.button {
+    justify-content: center;
+    font-weight: bold;
+    padding: 18px 18px;
+    background-color: #20ad96;
+    border-radius: 4%;
+    width: 25%;
+    transition: .2s;
+
+    &:hover {
+        background-color: #3f3a64;
+        cursor: pointer;
+    }
+}
+</style>
