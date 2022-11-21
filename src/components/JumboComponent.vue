@@ -39,7 +39,7 @@ export default {
     padding: 10px;
     height: 150px;
     background-color: $col1;
-    box-shadow: 10px solid black;
+    box-shadow: 10px 5px 5px black;
     width: 39px;
     align-items: center;
     margin-right: -10px;
@@ -89,13 +89,13 @@ p {
     justify-content: center;
     font-weight: bold;
     padding: 18px 18px;
-    background-color: #20ad96;
+    background-color: $col4;
     border-radius: 4%;
     width: 25%;
     transition: .2s;
 
     &:hover {
-        background-color: #3f3a64;
+        background-color: $col1-1;
     }
 
     a {

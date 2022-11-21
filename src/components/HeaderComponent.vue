@@ -16,15 +16,15 @@
         <!-- select language -->
         <div class="ms-5">
           <select class="form-select text-uppercase border-0" aria-label="Language">
-            <option v-for="(element, index) in LanguageList" :key="index">{{ element.item }}</option>
+            <option class="prova" v-for="(element, index) in LanguageList" :key="index">{{ element.item }}</option>
           </select>
         </div>
-        <div><i class="fa-regular fa-circle-user"></i></div>
+        <div><a href="#nogo"><i class="fa-regular fa-circle-user text-dark"></i></a></div>
         <!-- seard -->
         <div>
           <div class="search">
             <input type="text" name="" placeholder="Search...">
-            <i class="fa-solid fa-magnifying-glass text-secondary text-dark"></i>
+            <a href="#nogo"><i class="fa-solid fa-magnifying-glass text-secondary text-dark"></i></a>
           </div>
         </div>
       </div>
@@ -112,6 +112,14 @@ header {
 
   .icon-size {
     font-size: 10px;
+  }
+
+  .prova::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: red;
   }
 }
 </style>
