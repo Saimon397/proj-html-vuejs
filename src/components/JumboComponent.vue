@@ -1,13 +1,13 @@
 <template>
     <div class="d-flex justify-content-between bg-container container-fluid">
         <div class="space">
-            <h3>New Challenges, New Skills</h3>
-            <h1>Build your own life coaching business</h1>
-            <p>
+            <h3 class="pb-3">New Challenges, New Skills</h3>
+            <h1 class="pb-3">Build your own life coaching business</h1>
+            <p class="pb-3">
                 Whole-Life Business Coaching for committed entrepreneurs
             </p>
-            <div class="d-flex text-white button">
-                <span>Get started today</span>
+            <div class="d-flex button">
+                <a class="text-white" href="#nogo">Get started today</a>
             </div>
         </div>
         <div class="img-backgorund"><img src="/img/home-business-hero-avatar.png" alt="Non Trovato">
@@ -96,7 +96,10 @@ p {
 
     &:hover {
         background-color: #3f3a64;
-        cursor: pointer;
+    }
+
+    a {
+        text-decoration: none;
     }
 }
 </style>
