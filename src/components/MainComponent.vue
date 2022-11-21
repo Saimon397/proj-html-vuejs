@@ -8,7 +8,7 @@
         executive coaching in the new age of digitalization.</h1>
     </div>
     <!-- inserisco i 6 component dinamicamente -->
-    <div class="d-flex justify-content-around align-items-center pt-5">
+    <div class="d-flex justify-content-around pt-5">
       <div class="px-3" v-for="(element, index) in elements" :key="index">
         <h5>{{ element.name }}</h5>
         <p> {{ element.info }} </p>
