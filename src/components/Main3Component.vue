@@ -17,7 +17,7 @@
                 <span>{{ card.Students }} Students</span>
             </div>
         </div>
-        <div class="text-center pt-3">
+        <div class="text-center pt-5">
             <p>Take the control of their life back and start doing things to make their dream come true.<br><a
                     @click.prevent href="#nogo">View all courses<i class="fa-solid fa-arrow-right-long ps-2"></i></a>
             </p>
