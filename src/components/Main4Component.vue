@@ -16,7 +16,7 @@
                             <div class="question-text">
                                 <h4>{{ element.name }}</h4>
                             </div>
-                            <div class="question-hr"><i class="fa-solid fa-chevron-down"></i></div>
+                            <div class="question-hr"><i class="fa-regular fa-circle-down"></i></div>
                             <div class="hidden">
                                 {{ element.info }}
                             </div>
@@ -140,6 +140,5 @@ h1 {
     margin-top: 20px;
     width: 80%;
     transition: 0.8s;
-    text-align: center;
 }
 </style>

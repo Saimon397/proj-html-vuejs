@@ -34,7 +34,9 @@ export default {
 @use '../assets/partials/variables' as *;
 
 .menu-comparsa {
+    z-index: 999;
     display: flex;
+    position: fixed;
     flex-direction: column;
     padding: 10px;
     height: 150px;
@@ -42,8 +44,8 @@ export default {
     box-shadow: 10px 5px 5px black;
     width: 39px;
     align-items: center;
-    margin-right: -10px;
-    margin-top: 100px;
+    margin-left: 1460px;
+    margin-top: 120px;
     border-radius: 5px;
 }
 
