@@ -16,7 +16,7 @@
         <!-- select language -->
         <div class="ms-5">
           <select class="form-select text-uppercase border-0" aria-label="Language">
-            <option class="prova" v-for="(element, index) in LanguageList" :key="index">{{ element.item }}</option>
+            <option v-for="(element, index) in LanguageList" :key="index">{{ element.item }}</option>
           </select>
         </div>
         <div><a href="#nogo"><i class="fa-regular fa-circle-user text-dark"></i></a></div>
@@ -62,6 +62,7 @@ export default {
 
       LanguageList: [
         {
+          img: 'img/en.png',
           item: 'English',
         },
         {
@@ -112,14 +113,6 @@ header {
 
   .icon-size {
     font-size: 10px;
-  }
-
-  .prova::before {
-    content: "";
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-color: red;
   }
 }
 </style>

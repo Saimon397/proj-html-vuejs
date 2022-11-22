@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid mt-5 pt-5 text-center bg-col2">
+    <div class="container-fluid mt-5 pt-5 pb-5 text-center bg-col2">
         <div>
             <h4>Let's Dream Big Together</h4>
         </div>
@@ -8,8 +8,8 @@
         </div>
         <!-- inserisco i 3 component dinamicamente -->
         <div class="d-flex justify-content-around my-5">
-            <div class="px-3 card" v-for="(element, index) in elements2" :key="index">
-                <img :src="`img/${element.img}.jpg`" alt="">
+            <div class="card" v-for="(element, index) in elements2" :key="index">
+                <img :src="element.img" alt="">
                 <h5>{{ element.name }}</h5>
                 <p> {{ element.info }} </p>
                 <div class="bord"></div>
@@ -17,7 +17,6 @@
                     <a @click.prevent :href="`${element.url}`">Discover now<i
                             class="fa-solid fa-arrow-right-long ms-2 mt-1"></i></a>
                 </div>
-
             </div>
         </div>
     </div>
@@ -32,22 +31,22 @@ export default {
         return {
             elements2: [
                 {
-                    img: 'home-business-service-slide-01-480x298.jpg',
+                    img: 'img/home-business-service-slide-01-480x298.jpg',
                     name: 'Consultative Trainig',
                     info: 'with a coach addressing multiple issues that are off balance, affecting your business in various unconsidered ways.',
-                    url: '#',
+                    url: '#nogo',
                 },
                 {
-                    img: 'home-business-service-slide-02-480x298.jpg',
+                    img: 'img/home-business-service-slide-02-480x298.jpg',
                     name: 'Real Deal Coaching',
                     info: 'Brings an exceptionally powerful opportunity. Being able to accept, to work with that opportunity.',
-                    url: '#',
+                    url: '#nogo',
                 },
                 {
-                    img: 'home-business-service-slide-03-480x298.jpg',
+                    img: 'img/home-business-service-slide-03-480x298.jpg',
                     name: 'Advisor Training Program',
                     info: 'Getting high quality, entrepreneur mindset driven online business coaching, is what is needed.',
-                    url: '#',
+                    url: '#nogo',
                 },
             ]
         }
@@ -80,25 +79,31 @@ h1 {
     background-color: $col1;
     box-shadow: 10px 5px 5px $col5;
     width: 400px;
+
+    img {
+        border: 3%;
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
-.disc-now-button {
+.disc-now-button,
+a {
     padding: 10px;
-    background-color: $col1;
     margin: 0 auto;
     widows: 80%;
     transition-duration: .3s;
-    border-radius: 15px;
+    text-decoration: none;
+    color: $col4;
+    font-weight: bolder;
+    padding-top: 20px;
 
     &:hover {
-        background-color: $col1-1;
+        background-color: $col4;
+        width: 100%;
+        height: 100%;
+        border-radius: 1%;
+        color: $col1;
     }
-
-    a {
-        text-decoration: none;
-        color: $col4;
-        font-weight: bolder;
-    }
-
 }
 </style>
