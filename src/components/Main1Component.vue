@@ -8,8 +8,8 @@
         executive coaching in the new age of digitalization.</h1>
     </div>
     <!-- inserisco i 6 component dinamicamente -->
-    <div class="d-flex justify-content-center pt-5">
-      <div class="px-3" v-for="(element, index) in elements" :key="index">
+    <div class="d-flex container-fluid justify-content-around mt-5 pt-5 pb-3 row gap-3">
+      <div class="card-info" v-for="(element, index) in elements" :key="index">
         <h5>{{ element.name }}</h5>
         <p> {{ element.info }} </p>
       </div>
@@ -90,6 +90,11 @@ h5 {
   color: $col1-2;
   font-weight: 500;
   font-size: 20px;
+}
+
+.card-info {
+  width: 400px;
+  height: 150px;
 }
 
 .button {
