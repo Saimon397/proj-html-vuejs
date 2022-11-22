@@ -1,12 +1,12 @@
 <template>
-    <div class="bg-col2 mt-5 mb-5 pt-5 pb-5">
+    <div class="container-fluid bg-col2 mt-5 mb-5 pt-5 pb-5">
         <div class="text-center">
             <h4>Let's Dream Big Together</h4>
         </div>
         <div class="text-center">
             <h1>Explore How can I help you</h1>
         </div>
-        <div class="container-fluid d-flex justify-content-between py-5">
+        <div class="d-flex justify-content-around py-5 gap-3">
             <div class="" v-for="(card, index) in cards" :key="index">
                 <img :src="card.img" alt="">
                 <div class="cost"> {{ card.price }} </div>
@@ -92,7 +92,7 @@ img {
     box-shadow: 10px 5px 5px $col5;
     border-radius: 7px;
     transition-duration: .4s;
-    width: 340px;
+    width: 320px;
 }
 
 .cost {

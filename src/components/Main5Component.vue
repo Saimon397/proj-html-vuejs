@@ -24,6 +24,9 @@
 
 <script>
 export default {
+    components: {
+        name: 'Main5Component',
+    },
     data: function () {
         return {
             elements3: [
