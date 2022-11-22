@@ -1,5 +1,5 @@
 <template>
-    <div class="bg3 container-fluid justify-content-between pt-5 pb-5">
+    <div class="bg3 container-fluid justify-content-between mt-5 pt-5 mb-5 pb-5">
         <div class="d-flex col-12">
             <div class="bg-video">
                 <img src="/img/home-business-video-poster-670x450.jpg" alt="">

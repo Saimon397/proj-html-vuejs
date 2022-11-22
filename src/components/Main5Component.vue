@@ -1,10 +1,18 @@
 <template>
-    <div class="bgg container-fluid pt-5 pb-5">
-        <div class="d-flex flex-column row gap-3">
+    <div class="bgg container-fluid mt-5 pt-5 pb-5">
+        <div class="text-center">
+            <h4>Let's Dream Big Together</h4>
+        </div>
+        <div class="text-center">
+            <h1>Explore How can I help you</h1>
+        </div>
+        <div class="d-flex container-fluid justify-content-around mt-5 pt-5 row gap-3">
             <div class="card2" v-for="(element, index) in elements3" :key="index">
-                <p>{{ element.cap }}</p>
-                <h5> {{ element.name }} </h5>
-                <div class="">
+                <div class="card2-1">
+                    <p>{{ element.cap }}</p>
+                    <h5> {{ element.name }} </h5>
+                </div>
+                <div class="card3">
                     <span class="num"> {{ element.num }} </span>
                     <span class="data"> {{ element.data }} </span>
                     <span class="button"> {{ element.buttonn }} </span>
@@ -75,11 +83,26 @@ export default {
     background-color: $col1;
 }
 
+h4 {
+    color: $col4;
+    padding-bottom: 30px;
+}
+
+h1 {
+    font-weight: bold;
+}
+
 .card2 {
     background-color: $col11;
     box-shadow: 10px 5px 5px $col5;
-    width: 500px;
+    width: 600px;
     height: 200px;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: $col1;
+        border-left: $col4;
+    }
 
     p {
         color: $col5;
@@ -90,7 +113,19 @@ export default {
     }
 }
 
+.card2-1 {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.card3 {
+    width: 500px;
+    height: 200px;
+    margin-left: 320px;
+}
+
 .num {
+    margin-right: 10px;
     color: $col4;
     font-weight: bold;
     font-size: 40px;
@@ -103,6 +138,7 @@ export default {
 }
 
 .button {
+    margin-left: 10px;
     margin-top: 20px;
     justify-content: center;
     font-weight: bold;
