@@ -8,7 +8,7 @@
                             alt=""></a>
                 </div>
             </div>
-            <div class="question">
+            <div class="container question">
                 <h1>To Thive In Business Today, You'll Need a Good Plan</h1>
                 <div v-for="(element, index) in elements3" :key="index">
                     <div class="small-container">
@@ -59,7 +59,7 @@ export default {
 @use '../assets/partials/variables' as *;
 
 .bg3 {
-    background-image: url(../../public/img/background-map-dots-top-right-transparent.png);
+    background-image: url(/img/background-map-dots-top-right-transparent.png);
     background-size: cover;
     background-color: $col1-1;
 }
@@ -68,6 +68,11 @@ export default {
     position: relative;
     padding-top: 100px;
     width: 100%;
+    border-radius: 50px;
+
+    img {
+        border-radius: 10px;
+    }
 }
 
 .yt {
@@ -80,25 +85,21 @@ h1 {
     padding-bottom: 40px;
     color: $col1;
     font-weight: bold;
+    font-size: 55px;
 }
 
 .question {
     margin-bottom: 60px;
 }
 
-.questions h2 {
-    padding-top: 50px;
-    padding-bottom: 30px;
-    font-size: 30px;
-}
-
-.question .small-container:last-child {
+.question .small-container {
     border-bottom: 1px solid rgb(162, 162, 162);
 }
 
 .question-hr i {
-    padding-right: 30px;
     padding-top: 30px;
+    font-size: 25px;
+    color: $col1;
 }
 
 .question-text {
@@ -115,6 +116,8 @@ h1 {
 
 .question-text h4 {
     margin: 10px;
+    margin-left: 50px;
+    color: $col1;
 }
 
 .question-box i {
@@ -137,8 +140,11 @@ h1 {
 .question-box:hover .hidden {
     display: block;
     font-size: 15px;
+    margin-left: 50px;
     margin-top: 20px;
     width: 80%;
     transition: 0.8s;
+    color: $col1;
+    line-height: 1.5rem;
 }
 </style>
