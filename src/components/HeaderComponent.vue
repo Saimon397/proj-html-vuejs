@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="sticky-top position-sticky">
     <div class="container-fluid m-auto py-1" id="nav">
       <div class=" d-flex justify-content-between align-items-center">
         <div> <img class="w-50 ms-5 pt-1" src="/img/dark-logo.png" alt=""> </div>
@@ -83,6 +83,7 @@ export default {
 
 header {
   background-color: $col1;
+  box-shadow: 10px 5px 5px $col5;
 
   .search {
     padding: 20px 20px;

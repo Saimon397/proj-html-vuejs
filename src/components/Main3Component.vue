@@ -1,30 +1,35 @@
 <template>
-    <div class="text-center pt-5">
-        <h4>Let's Dream Big Together</h4>
-    </div>
-    <div class="text-center">
-        <h1>Explore How can I help you</h1>
-    </div>
-    <!-- A DIV TO CONTAIN ALL CARDS -->
-    <div class="container-fluid d-flex justify-content-between py-5">
-        <div class="" v-for="(card, index) in cards" :key="index">
-            <img :src="card.img" alt="">
-            <div class="cost"> {{ card.price }} </div>
-            <h5>{{ card.info1 }}</h5>
-            <span><i class="fa-solid fa-file-lines"></i></span>
-            <span>{{ card.lessons }} Lessons</span>
-            <span><i class="fa-solid fa-user"></i></span>
-            <span>{{ card.Students }} Students</span>
+    <div class="bg-col2 pt-5 pb-5">
+        <div class="text-center">
+            <h4>Let's Dream Big Together</h4>
         </div>
-    </div>
-    <div class="text-center pt-3">
-        <p>Take the control of their life back and start doing things to make their dream come true.<br><a
-                @click.prevent href="#nogo">View all courses<i class="fa-solid fa-arrow-right-long ps-2"></i></a></p>
+        <div class="text-center">
+            <h1>Explore How can I help you</h1>
+        </div>
+        <div class="container-fluid d-flex justify-content-between py-5">
+            <div class="" v-for="(card, index) in cards" :key="index">
+                <img :src="card.img" alt="">
+                <div class="cost"> {{ card.price }} </div>
+                <h5>{{ card.info1 }}</h5>
+                <span><i class="fa-solid fa-file-lines"></i></span>
+                <span>{{ card.lessons }} Lessons</span>
+                <span><i class="fa-solid fa-user"></i></span>
+                <span>{{ card.Students }} Students</span>
+            </div>
+        </div>
+        <div class="text-center pt-3">
+            <p>Take the control of their life back and start doing things to make their dream come true.<br><a
+                    @click.prevent href="#nogo">View all courses<i class="fa-solid fa-arrow-right-long ps-2"></i></a>
+            </p>
+        </div>
     </div>
 </template>
 
 <script>
 export default {
+    components: {
+        name: 'Main3Component',
+    },
     data: function () {
         return {
             cards: [
@@ -66,6 +71,9 @@ export default {
 @use '../assets/partials/mixins' as *;
 @use '../assets/partials/variables' as *;
 
+.bg-col2 {
+    background-color: $col1;
+}
 
 h4 {
     color: $col4;
@@ -81,7 +89,7 @@ h5 {
 }
 
 img {
-    box-shadow: 10px 5px 5px black;
+    box-shadow: 10px 5px 5px $col5;
     border-radius: 7px;
     transition-duration: .4s;
     width: 340px;

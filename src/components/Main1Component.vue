@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid mt-5 pt-5 text-center bg-col">
+  <div class="container-fluid mt-5 pt-5 pb-5 text-center bg-col">
     <div>
       <h4>Let's Dream Big Together</h4>
     </div>
