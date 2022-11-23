@@ -66,6 +66,9 @@ header {
 
 a {
   color: $col1-2;
+  font-weight: 400;
+  font-size: 18px;
+  color: $col1-2;
   transition: 0.5s;
 
   &:hover {
