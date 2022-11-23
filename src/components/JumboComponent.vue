@@ -13,7 +13,7 @@
         <div class="img-backgorund"><img src="/img/home-business-hero-avatar.png" alt="Non Trovato">
         </div>
         <div class="menu-comparsa">
-            <i class="py-2 fa-solid fa-cart-shopping"></i>
+            <i class="py-2 fa-solid fa-ruler-combined"></i>
             <i class="py-2 fa-solid fa-life-ring"></i>
             <i class="py-2 fa-solid fa-book"></i>
             <i class="py-2 fa-solid fa-cart-shopping"></i>
