@@ -9,7 +9,7 @@
     </div>
     <!-- inserisco i 6 component dinamicamente -->
     <div class="d-flex container-fluid justify-content-around mt-5 pt-5 pb-3 row gap-5">
-      <div class="card-info" v-for="(element, index) in store.elements" :key="index">
+      <div class="card-info pt-2" v-for="(element, index) in store.elements" :key="index">
         <img :src="element.img" alt="">
         <h5>{{ element.name }}</h5>
         <p> {{ element.info }} </p>
