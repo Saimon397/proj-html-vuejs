@@ -7,7 +7,7 @@
             <h1>Explore How can I help you</h1>
         </div>
         <div class="d-flex container-fluid justify-content-around mt-5 pt-5 row gap-3">
-            <div class="card2" v-for="(element, index) in elements3" :key="index">
+            <div class="card2" v-for="(element, index) in store.elements4" :key="index">
                 <div class="card2-1">
                     <p>{{ element.cap }}</p>
                     <h5> {{ element.name }} </h5>
@@ -28,56 +28,14 @@
 </template>
 
 <script>
+import { store } from '../data/store';
 export default {
     components: {
         name: 'Main5Component',
     },
     data: function () {
         return {
-            elements3: [
-                {
-                    cap: '📍 Texas, US',
-                    name: 'Storytelling Workshop',
-                    num: '22',
-                    data: 'APR',
-                    buttonn: 'Get ticket',
-                },
-                {
-                    cap: '📍 New York, US',
-                    name: 'Painting Art Contest 2020',
-                    num: '10',
-                    data: 'OCT',
-                    buttonn: 'Get ticket',
-                },
-                {
-                    cap: '📍 Hamburg, Germany',
-                    name: 'International Art Fair 2020',
-                    num: '23',
-                    data: 'NOV',
-                    buttonn: 'Get ticket',
-                },
-                {
-                    cap: '📍 Illinois, US',
-                    name: 'Street Performance: Call for Artist',
-                    num: '15',
-                    data: 'DEC',
-                    buttonn: 'Get ticket',
-                },
-                {
-                    cap: '📍 Illinois, US',
-                    name: 'Consumer Food Safety Education Conference',
-                    num: '22',
-                    data: 'JUL',
-                    buttonn: 'Get ticket',
-                },
-                {
-                    cap: '📍 Dubai',
-                    name: 'How meditation improve your mental health',
-                    num: '12',
-                    data: 'AUG',
-                    buttonn: 'Get ticket',
-                },
-            ]
+            store,
         }
     }
 }

@@ -10,7 +10,7 @@
             </div>
             <div class="container question">
                 <h1>To Thive In Business Today, You'll Need a Good Plan</h1>
-                <div v-for="(element, index) in elements3" :key="index">
+                <div v-for="(element, index) in store.elements3" :key="index">
                     <div class="small-container">
                         <div class="question-box">
                             <div class="question-text">
@@ -29,26 +29,14 @@
 </template>
 
 <script>
+import { store } from '../data/store';
 export default {
     components: {
         name: 'Main4Component',
     },
     data: function () {
         return {
-            elements3: [
-                {
-                    name: 'How can we help ?',
-                    info: 'How many courses you\'ve been on, using however many techniques and methods. Unless you\'ve come to realize the value of mindset, then you\'ve yet to understand how success comes. With everyone else\'s mindset involved impacting too. Hence why business coaching is so crucial for success.',
-                },
-                {
-                    name: 'Why would I need a business COACH ?',
-                    info: 'Every great entrepreneur is surrounded by coaches and advisor. A great business coach will listen and guide you to success. Perhaps most importantly, a business coach will make you focus on your goals and hold you accountable to th things you should do, and to where you want your business to be.',
-                },
-                {
-                    name: 'What is one-on-one coaching ?',
-                    info: 'We understand that every business is at a different stage of development; this is why we\'ve also developed multiple Group Coaching programs to fit the needs of every kind od business. Unlike a consultant, your personal MaxCoach will do more than just show you want to do - he or she will be with you when you need them most.',
-                },
-            ]
+            store,
         }
     }
 }

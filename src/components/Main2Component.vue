@@ -8,7 +8,7 @@
         </div>
         <!-- inserisco i 3 component dinamicamente -->
         <div class="d-flex justify-content-around my-5">
-            <div class="card" v-for="(element, index) in elements2" :key="index">
+            <div class="card" v-for="(element, index) in store.elements2" :key="index">
                 <img :src="element.img" alt="">
                 <h5>{{ element.name }}</h5>
                 <p> {{ element.info }} </p>
@@ -23,32 +23,14 @@
 </template>
 
 <script>
+import { store } from '../data/store';
 export default {
     components: {
         name: 'Main2Component',
     },
     data: function () {
         return {
-            elements2: [
-                {
-                    img: 'img/home-business-service-slide-01-480x298.jpg',
-                    name: 'Consultative Trainig',
-                    info: 'with a coach addressing multiple issues that are off balance, affecting your business in various unconsidered ways.',
-                    url: '#nogo',
-                },
-                {
-                    img: 'img/home-business-service-slide-02-480x298.jpg',
-                    name: 'Real Deal Coaching',
-                    info: 'Brings an exceptionally powerful opportunity. Being able to accept, to work with that opportunity.',
-                    url: '#nogo',
-                },
-                {
-                    img: 'img/home-business-service-slide-03-480x298.jpg',
-                    name: 'Advisor Training Program',
-                    info: 'Getting high quality, entrepreneur mindset driven online business coaching, is what is needed.',
-                    url: '#nogo',
-                },
-            ]
+            store,
         }
     }
 }

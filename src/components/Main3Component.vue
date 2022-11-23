@@ -7,7 +7,7 @@
             <h1>Explore How can I help you</h1>
         </div>
         <div class="d-flex justify-content-around py-5 gap-3">
-            <div class="" v-for="(card, index) in cards" :key="index">
+            <div class="" v-for="(card, index) in store.cards" :key="index">
                 <img :src="card.img" alt="">
                 <div class="cost"> {{ card.price }} </div>
                 <h5>{{ card.info1 }}</h5>
@@ -26,42 +26,14 @@
 </template>
 
 <script>
+import { store } from '../data/store';
 export default {
     components: {
         name: 'Main3Component',
     },
     data: function () {
         return {
-            cards: [
-                {
-                    img: 'img/course-02-443x600.jpg',
-                    price: '$40.00',
-                    info1: 'Learning to Write as a Professional Author',
-                    lessons: 20,
-                    Students: 63,
-                },
-                {
-                    img: 'img/stock-full-hd-03-443x600.jpg',
-                    price: 'Free',
-                    info1: 'Customer-centric Info-Tech Strategies',
-                    lessons: 24,
-                    Students: 896,
-                },
-                {
-                    img: 'img/stock-full-hd-04-443x600.jpg',
-                    price: '$19.00',
-                    info1: 'Open Programming Courses for Everyone: Python',
-                    lessons: 17,
-                    Students: 65,
-                },
-                {
-                    img: 'img/stock-full-hd-06-443x600.jpg',
-                    price: '$26.00',
-                    info1: 'Academic Listening and Note-taking',
-                    lessons: 14,
-                    Students: 68,
-                },
-            ]
+            store,
         }
     }
 }

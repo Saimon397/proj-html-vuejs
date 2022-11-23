@@ -9,7 +9,7 @@
     </div>
     <!-- inserisco i 6 component dinamicamente -->
     <div class="d-flex container-fluid justify-content-around mt-5 pt-5 pb-3 row gap-3">
-      <div class="card-info" v-for="(element, index) in elements" :key="index">
+      <div class="card-info" v-for="(element, index) in store.elements" :key="index">
         <h5>{{ element.name }}</h5>
         <p> {{ element.info }} </p>
       </div>
@@ -25,44 +25,14 @@
 </template>
 
 <script>
+import { store } from '../data/store';
 export default {
   components: {
     name: 'Main1Component',
   },
   data: function () {
     return {
-      elements: [
-        {
-          img: '',
-          name: 'One to One',
-          info: 'Getting the necessary clarity about the current state to help you improve your game.',
-        },
-        {
-          img: '',
-          name: 'Anywhere',
-          info: 'Access to valuable and portable program which allow you to setup and live anywhere you want.',
-        },
-        {
-          img: '',
-          name: 'On Time',
-          info: 'Punctuality is our top priority because it\'s an essential criteria to assess a program quality.',
-        },
-        {
-          img: '',
-          name: 'Online Coures',
-          info: 'Online business coaching now offers you a very powerful way to empower your business into success.',
-        },
-        {
-          img: '',
-          name: 'Consulting',
-          info: 'You will get a clear sense of direction for your business, thorough assessment and faster results.',
-        },
-        {
-          img: '',
-          name: 'Self Development',
-          info: 'Business Coaching often keep your focus and develop you both in a professional and personal way.',
-        },
-      ]
+      store,
     }
   }
 }

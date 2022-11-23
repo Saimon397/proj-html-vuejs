@@ -7,7 +7,7 @@
         <div>
           <ul class="pt-3">
             <a href="#nogo">
-              <li class="ms-3" v-for="(element, index) in NavList" :key="index"> {{ element.item }}
+              <li class="ms-3" v-for="(element, index) in store.NavList" :key="index"> {{ element.item }}
                 <i class="fa-solid fa-angle-down icon-size"></i>
               </li>
             </a>
@@ -16,7 +16,7 @@
         <!-- select language -->
         <div class="ms-5">
           <select class="form-select text-uppercase border-0" aria-label="Language">
-            <option v-for="(element, index) in LanguageList" :key="index">{{ element.item }}</option>
+            <option v-for="(element, index) in store.LanguageList" :key="index">{{ element.item }}</option>
           </select>
         </div>
         <div><a href="#nogo"><i class="fa-regular fa-circle-user text-dark"></i></a></div>
@@ -33,45 +33,14 @@
 </template>
 
 <script>
+import { store } from '../data/store';
 export default {
   components: {
     name: 'HeaderComonent',
   },
   data: function () {
     return {
-      NavList: [
-        {
-          item: 'Home'
-        },
-        {
-          item: 'Pages'
-        },
-        {
-          item: 'Courses'
-        },
-        {
-          item: 'Features'
-        },
-        {
-          item: 'Blog'
-        },
-        {
-          item: 'Shop'
-        },
-      ],
-
-      LanguageList: [
-        {
-          img: 'img/en.png',
-          item: 'English',
-        },
-        {
-          item: 'Français',
-        },
-        {
-          item: 'Deutsch',
-        },
-      ]
+      store,
     };
   },
 }
