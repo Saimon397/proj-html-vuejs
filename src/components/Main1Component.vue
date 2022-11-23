@@ -8,13 +8,14 @@
         executive coaching in the new age of digitalization.</h1>
     </div>
     <!-- inserisco i 6 component dinamicamente -->
-    <div class="d-flex container-fluid justify-content-around mt-5 pt-5 pb-3 row gap-3">
+    <div class="d-flex container-fluid justify-content-around mt-5 pt-5 pb-3 row gap-5">
       <div class="card-info" v-for="(element, index) in store.elements" :key="index">
+        <img :src="element.img" alt="">
         <h5>{{ element.name }}</h5>
         <p> {{ element.info }} </p>
       </div>
     </div>
-    <div class="d-flex justify-content-around align-items-center pt-5"></div>
+    <div class="d-flex justify-content-around align-items-center pt-5 mt-5"></div>
     <span class="button2">
       <a class="" href="#nogo">Get started today</a>
     </span>
@@ -60,11 +61,19 @@ h5 {
   color: $col1-2;
   font-weight: 500;
   font-size: 20px;
+  padding-top: 5px;
 }
 
 .card-info {
   width: 400px;
-  height: 150px;
+  height: 230px;
+  background-color: $col1;
+  box-shadow: 10px 5px 5px 5px $col5;
+  border-radius: 3%;
+}
+
+img {
+  width: 100px;
 }
 
 .button {

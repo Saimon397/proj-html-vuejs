@@ -39,32 +39,32 @@ export const store = reactive({
 
     elements: [
         {
-            img: '',
+            img: 'img/icons8-luce-accesa.gif',
             name: 'One to One',
             info: 'Getting the necessary clarity about the current state to help you improve your game.',
         },
         {
-            img: '',
+            img: 'img/icons8-posizione-globale.gif',
             name: 'Anywhere',
             info: 'Access to valuable and portable program which allow you to setup and live anywhere you want.',
         },
         {
-            img: '',
+            img: 'img/icons8-orologio.gif',
             name: 'On Time',
             info: 'Punctuality is our top priority because it\'s an essential criteria to assess a program quality.',
         },
         {
-            img: '',
+            img: 'img/icons8-monitor.gif',
             name: 'Online Coures',
             info: 'Online business coaching now offers you a very powerful way to empower your business into success.',
         },
         {
-            img: '',
+            img: 'img/icons8-grafico-ad-anello.gif',
             name: 'Consulting',
             info: 'You will get a clear sense of direction for your business, thorough assessment and faster results.',
         },
         {
-            img: '',
+            img: 'img/icons8-impostazioni.gif',
             name: 'Self Development',
             info: 'Business Coaching often keep your focus and develop you both in a professional and personal way.',
         },
