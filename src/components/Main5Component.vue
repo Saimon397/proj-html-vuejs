@@ -87,7 +87,7 @@ h1 {
 }
 
 .card3 {
-    width: 350px;
+    width: 300px;
     height: 200px;
     margin-left: 320px;
 }
