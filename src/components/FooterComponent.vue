@@ -86,6 +86,10 @@ a {
   }
 }
 
+p {
+  color: $col1-2;
+}
+
 .rights {
   color: $col5;
   text-align: center;
