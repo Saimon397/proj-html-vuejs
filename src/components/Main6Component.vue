@@ -87,7 +87,6 @@
 export default {
     data: function () {
         return {
-
             dots: [
                 {
                     dot: 'fa-circle'
@@ -207,6 +206,7 @@ h1 {
     position: relative;
     padding: 65px 30px;
     border-radius: 6px;
+    box-shadow: 10px 5px 5px $col5;
 }
 
 .profile-pic {

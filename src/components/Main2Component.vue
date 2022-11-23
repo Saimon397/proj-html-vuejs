@@ -61,12 +61,17 @@ h1 {
     background-color: $col1;
     box-shadow: 10px 5px 5px $col5;
     width: 400px;
+    transition: 0.8s;
 
-    img {
-        border: 3%;
-        width: 100%;
-        margin-bottom: 20px;
+    &:hover {
+        transform: scale(1.1);
     }
+}
+
+img {
+    border: 3%;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .disc-now-button,

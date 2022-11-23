@@ -232,5 +232,4 @@ export const store = reactive({
             moreInfo: 'Contact us'
         }
     ],
-
 });
