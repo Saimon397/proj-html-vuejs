@@ -57,10 +57,16 @@ export default {
     padding-top: 100px;
     width: 100%;
     border-radius: 50px;
+    transition: 1s;
 
-    img {
-        border-radius: 10px;
+    &:hover {
+        transform: scale(1.1);
     }
+}
+
+img {
+    border-radius: 10px;
+    transition: 0.8s;
 }
 
 .yt {
