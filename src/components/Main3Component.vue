@@ -6,15 +6,18 @@
         <div class="text-center">
             <h1>Explore How can I help you</h1>
         </div>
-        <div class="d-flex justify-content-around py-5 gap-3">
-            <div class="" v-for="(card, index) in store.cards" :key="index">
+        <div class="d-flex justify-content-around py-5 gap-1">
+            <div class="carddd container" v-for="(card, index) in store.cards" :key="index">
                 <img :src="card.img" alt="">
                 <div class="cost"> {{ card.price }} </div>
                 <h5>{{ card.info1 }}</h5>
-                <span><i class="fa-solid fa-file-lines"></i></span>
-                <span>{{ card.lessons }} Lessons</span>
-                <span><i class="fa-solid fa-user"></i></span>
-                <span>{{ card.Students }} Students</span>
+                <div class="rest">
+                    <span><i class="fa-solid fa-file-lines me-2"></i></span>
+                    <span class="">{{ card.lessons }} Lessons</span>
+                    &nbsp;
+                    <span><i class="fa-solid fa-user me-2"></i></span>
+                    <span>{{ card.Students }} Students</span>
+                </div>
             </div>
         </div>
         <div class="text-center pt-5">
@@ -56,23 +59,36 @@ h1 {
     font-weight: bold;
 }
 
+.carddd {
+    transition: 0.8s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
 h5 {
-    color: $col1-1;
+    text-align: center;
+    color: $col1;
 }
 
 img {
     box-shadow: 10px 5px 5px $col5;
     border-radius: 7px;
-    transition-duration: .4s;
-    width: 320px;
+    width: 350px;
 }
 
 .cost {
-    padding: 10px;
+    padding: 20px;
     color: $col16;
+    font-size: 25px;
     font-weight: bold;
-    border-radius: 0px 7px;
-    margin-top: -150px;
+    margin-top: -180px;
+}
+
+.rest {
+    text-align: center;
+    color: $col1;
 }
 
 p {

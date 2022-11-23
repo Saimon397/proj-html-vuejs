@@ -5,9 +5,9 @@
                 <div class="col-8">
                     <div class="d-flex align-items-center">
                         <div class="line"></div>
-                        <div class="sub-title">project</div>
+                        <div class="sub-title"></div>
                     </div>
-                    <div class="title">our expert trusted consultants help clients</div>
+                    <div class="title"></div>
                 </div>
                 <div class="arrow">
                     <button @click="scrollLeft()"><i class="fa-solid fa-arrow-left"></i></button>
@@ -16,12 +16,12 @@
             </div>
             <div class="carousel-container">
                 <div class="carousel" ref="carousel">
-                    <div><img src="img/carousel-1.jpg" alt=""></div>
-                    <div><img src="img/carousel-2.jpg" alt=""></div>
-                    <div><img src="img/carousel-3.jpg" alt=""></div>
-                    <div><img src="img/carousel-1.jpg" alt=""></div>
-                    <div><img src="img/carousel-2.jpg" alt=""></div>
-                    <div><img src="img/carousel-3.jpg" alt=""></div>
+                    <div><img src="" alt=""></div>
+                    <div><img src="" alt=""></div>
+                    <div><img src="" alt=""></div>
+                    <div><img src="" alt=""></div>
+                    <div><img src="" alt=""></div>
+                    <div><img src="" alt=""></div>
                 </div>
             </div>
         </div>
