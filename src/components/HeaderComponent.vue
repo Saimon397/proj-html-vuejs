@@ -6,12 +6,10 @@
       <div class=" d-flex justify-content-between align-items-center">
         <div> <img class="w-50 ms-5 pt-1" src="/img/dark-logo.png" alt=""> </div>
       </div>
-
       <div class="">
         <ul class="d-flex gap-5 list-unstyled pt-2 m-0 position-relative uldprdwn">
           <li v-for="i in store.NavList"><a class="dropdwn text-decoration-none hover-underline-animation" href="#"
               @click="i.hover = !i.hover">{{ i.text }} <i class="fa-solid fa-chevron-down"></i></a>
-
             <Transition name="move">
               <div class="dropdwn-menu position-absolute p-4 d-flex bg-white" v-if="i.hover">
                 <ul class="list-unstyled row">
@@ -22,7 +20,6 @@
                 </ul>
               </div>
             </Transition>
-
           </li>
           <div class="ms-5">
             <select class="form-select text-uppercase border-0" aria-label="Language">
@@ -31,20 +28,15 @@
           </div>
           <a href="#nogo"><i class="fa-regular fa-circle-user text-black fs-5 align-self-center"></i></a>
         </ul>
-
       </div>
-
       <div>
-
         <div class="input-group">
           <div class="search">
             <input type="text" name="" placeholder="Search...">
             <a href="#nogo"><i class="fa-solid fa-magnifying-glass text-secondary text-dark fs-5"></i></a>
           </div>
         </div>
-
       </div>
-
     </div>
   </header>
 </template>
@@ -82,20 +74,6 @@ a {
 
   i {
     font-size: 10px;
-  }
-}
-
-.button {
-  border: 1px solid $col5;
-  border: 0;
-  transition: 0.5s;
-
-  &:hover {
-    background-color: $col1-1;
-
-    i {
-      color: white;
-    }
   }
 }
 
@@ -145,6 +123,8 @@ input {
 
     li {
       margin-bottom: 5px;
+      color: $col5;
+      font-weight: 500;
       font-size: 15px;
       padding: 0 0.5rem;
       transition: 0.4s ease;
