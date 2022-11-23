@@ -74,9 +74,21 @@ img {
     margin-bottom: 20px;
 }
 
+h5 {
+    color: $col1-2;
+    font-weight: 700;
+}
+
+p {
+    color: $col5;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .disc-now-button,
 a {
-    padding: 10px;
+    padding: 20px;
     margin: 0 auto;
     widows: 80%;
     transition-duration: .3s;
