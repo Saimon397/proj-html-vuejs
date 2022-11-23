@@ -65,7 +65,7 @@
                     <span> {{ person.profession }} </span>
                 </div>
             </div>
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center pt-4">
                 <div @click="changeN(index)" v-for="(element, index) in dots" :key="index" class="m-3"
                     :class="condition(index) ? 'color-dots fs-5' : 'text-dark'">
                     <i :class="`fa-solid ${element.dot}`"></i>
