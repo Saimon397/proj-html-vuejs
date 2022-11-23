@@ -182,4 +182,55 @@ export const store = reactive({
         },
     ],
 
+    addresses: [
+        {
+            text: '382 NE 191st St # 87394 Mianmi, FL 33179-3899'
+        },
+        {
+            text: '+1(305)547-9909(9am-5pm ESTm Monday - Friday)'
+        },
+        {
+            text: 'support@maxcoach.com'
+        }
+    ],
+
+    info: [
+        {
+            inf: 'Start here'
+        },
+        {
+            inf: 'Blog'
+        },
+        {
+            inf: 'About us'
+        },
+    ],
+
+    Explore: [
+        {
+            Exp: 'Memebership'
+        },
+        {
+            Exp: 'Purchase guide'
+        },
+        {
+            Exp: 'Privacy policy'
+        },
+        {
+            Exp: 'Terms of service'
+        },
+    ],
+
+    NotDefined: [
+        {
+            moreInfo: 'Success'
+        },
+        {
+            moreInfo: 'Courses'
+        },
+        {
+            moreInfo: 'Contact us'
+        }
+    ],
+
 });

@@ -1,5 +1,5 @@
 <template>
-    <div class="d-flex justify-content-between bg-container container-fluid">
+    <div id="up" class="d-flex justify-content-between bg-container container-fluid">
         <div class="space">
             <h3 class="pb-3">New Challenges, New Skills</h3>
             <h1 class="pb-3">Build your own life coaching business</h1>
