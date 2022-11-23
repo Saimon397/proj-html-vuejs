@@ -118,6 +118,11 @@ h1 {
     margin: 10px;
     margin-left: 50px;
     color: $col1;
+
+    &:hover {
+        transition: 0.5s;
+        color: $col4;
+    }
 }
 
 .question-box i {
@@ -131,6 +136,7 @@ h1 {
     rotate: 180deg;
     padding-left: 30px;
     padding-bottom: 30px;
+    color: $col4;
 }
 
 .question-box .hidden {

@@ -19,6 +19,11 @@
                 </div>
             </div>
         </div>
+        <div class="text-center pt-5 pb-5">
+            <p>Excited about our event? <a @click.prevent href="#nogo">View all events<i
+                        class="fa-solid fa-arrow-right-long ps-2"></i></a>
+            </p>
+        </div>
     </div>
 </template>
 
@@ -142,13 +147,11 @@ h1 {
 
 .button {
     margin-left: 10px;
-    margin-top: 20px;
     justify-content: center;
     font-weight: bold;
-    padding: 18px 18px;
+    padding: 10px 18px;
     background-color: $col4;
     border-radius: 4%;
-    width: 25%;
     transition: .2s;
     color: $col1;
 
@@ -158,6 +161,15 @@ h1 {
 
     a {
         text-decoration: none;
+    }
+}
+
+p {
+    font-size: 20px;
+    color: $col5;
+
+    a {
+        color: $col4;
     }
 }
 </style>

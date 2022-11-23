@@ -26,19 +26,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use '../assets/partials/mixins' as *;
+@use '../assets/partials/variables' as *;
+
 .bggg {
-    background-color: rgb(254, 254, 254);
+    background-color: $col1;
 }
 
 h1 {
     font-weight: bold;
-    color: rgb(51, 51, 51);
+    color: $col1-2;
 }
 
 mark {
-    background-color: rgb(254, 254, 254);
+    background-color: $col1;
     font-weight: 400;
-    color: rgb(30, 174, 150);
+    color: $col4;
 }
 
 input {
@@ -50,13 +53,13 @@ input {
     margin-left: -920px;
     font-weight: bold;
     padding: 12px;
-    background-color: rgb(30, 174, 150);
+    background-color: $col4;
     border-radius: 4%;
     width: 10%;
     transition: .2s;
 
     &:hover {
-        background-color: rgb(75, 71, 110);
+        background-color: $col1-1;
     }
 
     a {
