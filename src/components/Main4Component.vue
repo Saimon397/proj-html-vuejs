@@ -66,7 +66,6 @@ export default {
 
 img {
     border-radius: 10px;
-    transition: 0.8s;
 }
 
 .yt {
