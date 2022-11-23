@@ -9,7 +9,7 @@
 
       <div class="">
         <ul class="d-flex gap-5 list-unstyled pt-2 m-0 position-relative uldprdwn">
-          <li v-for="i in store.NavList"><a class=" drpdwn  text-decoration-none hover-underline-animation " href="#"
+          <li v-for="i in store.NavList"><a class="dropdwn text-decoration-none hover-underline-animation" href="#"
               @click="i.hover = !i.hover">{{ i.text }} <i class="fa-solid fa-chevron-down"></i></a>
 
             <Transition name="move">
@@ -141,7 +141,7 @@ input {
   border-bottom: 2px solid $col1-1;
 
   ul {
-    background-color: white;
+    background-color: $col1;
 
     li {
       margin-bottom: 5px;
@@ -160,7 +160,7 @@ input {
         border-radius: 3px;
         padding: 3px;
         margin-left: 2px;
-        background-color: red;
+        background-color: rgb(254, 71, 102);
         color: white;
       }
 
@@ -188,7 +188,6 @@ input {
   transform: translateY(30px);
 }
 
-// hover su item nav
 .hover-underline-animation {
   display: inline-block;
   position: relative;
