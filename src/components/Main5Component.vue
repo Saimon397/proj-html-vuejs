@@ -19,9 +19,9 @@
                 </div>
             </div>
         </div>
-        <div class="text-center pt-5 pb-5">
-            <p>Excited about our event? <a @click.prevent href="#nogo">View all events<i
-                        class="fa-solid fa-arrow-right-long ps-2"></i></a>
+        <div class="text-center pt-5 pb-5 mt-5">
+            <p>Excited about our event? <a class="hover-underline-animation" @click.prevent href="#nogo">View all
+                    events<i class="fa-solid fa-arrow-right-long ps-2"></i></a>
             </p>
         </div>
     </div>
@@ -129,7 +129,32 @@ p {
     color: $col5;
 
     a {
+        text-decoration: none;
         color: $col4;
     }
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $col4;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 </style>

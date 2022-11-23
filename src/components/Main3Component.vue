@@ -22,7 +22,8 @@
         </div>
         <div class="text-center pt-5">
             <p>Take the control of their life back and start doing things to make their dream come true.<br><a
-                    @click.prevent href="#nogo">View all courses<i class="fa-solid fa-arrow-right-long ps-2"></i></a>
+                    class="hover-underline-animation" @click.prevent href="#nogo">View all courses<i
+                        class="fa-solid fa-arrow-right-long ps-2"></i></a>
             </p>
         </div>
     </div>
@@ -96,7 +97,32 @@ p {
     color: $col5;
 
     a {
+        text-decoration: none;
         color: $col1-2;
     }
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $col1-2;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 </style>
