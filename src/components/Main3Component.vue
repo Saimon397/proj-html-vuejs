@@ -73,7 +73,7 @@ h5 {
 }
 
 img {
-    box-shadow: 10px 5px 5px $col5;
+    box-shadow: 10px 5px 5px 5px $col5;
     border-radius: 7px;
     width: 340px;
 }

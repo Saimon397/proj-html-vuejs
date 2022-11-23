@@ -60,7 +60,7 @@ h1 {
 
 .card2 {
     background-color: $col11;
-    box-shadow: 10px 5px 5px $col5;
+    box-shadow: 10px 5px 5px 5px $col5;
     width: 600px;
     height: 200px;
     border-radius: 10px;
