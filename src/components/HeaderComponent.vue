@@ -134,7 +134,7 @@ input {
       cursor: pointer;
 
       &:hover {
-        color: $col1-1;
+        color: $col4;
       }
 
       &.hot::after {
