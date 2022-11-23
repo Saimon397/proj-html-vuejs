@@ -75,6 +75,8 @@ h1 {
     }
 
     h5 {
+        font-size: 22px;
+        font-weight: 800;
         color: $col1-2;
     }
 }
